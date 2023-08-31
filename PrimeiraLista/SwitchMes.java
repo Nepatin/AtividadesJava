@@ -54,5 +54,6 @@ public class SwitchMes {
                 break;
         }
         System.out.println("Programa finalizado.");
+        qnd.close();
     }
 }
