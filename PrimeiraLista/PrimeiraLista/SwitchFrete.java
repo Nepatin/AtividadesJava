@@ -14,10 +14,10 @@ public class SwitchFrete {
 
         System.out.println("Ola, bem vindo!\nVamos imaginar o seguinte dilema: voce esta interessado em comprar um produto do exterior e deseja saber o valor total do produto junto com o frete.\nEsse programa ira auxiliar voce!");
 
-        System.out.println("\nDigite o valor do seu produto");
+        System.out.println("\nDigite o valor do seu produto: ");
         produto = frete.nextFloat();
 
-        System.out.println("\nDigite o numero pais sendo [1]EUA, [2]Franca, [3]Mexico, [4]Argentina e [5]China, no qual voce deseja comprar: ");
+        System.out.println("\nDigite o numero do pais sendo [1]EUA, [2]Franca, [3]Mexico, [4]Argentina e [5]China, no qual voce deseja comprar: ");
         pais = frete.nextInt();
 
         totala= produto + 60.00;
@@ -46,62 +46,7 @@ public class SwitchFrete {
                 System.out.println("\nNao existe numero para esse pais");
                 break;
         }
-        frete.close();
-        System.out.println("\nPrograma Finalizado");
+       frete.close();
+       System.out.println("\nPrograma Finalizado");
     }
 }
-
-/*
-Uma outra maneira de fazer essa atividade
- * public class SwitchFrete {
-    public static void main(String[] args) {
-        float produto;
-
-        float  freteA, freteB, freteC, freteD, freteE;
-
-        freteA = 60.00;
-        freteB = 75.50;
-        freteC = 50.00;
-        freteD = 27.35;
-        freteE = 80.00;
-
-        int pais;
-
-        Scanner frete = new Scanner (System.in);
-
-        System.out.println("Ola, bem vindo!");
-
-        System.out.println("Digite o valor do seu produto");
-        produto = frete.nextFloat();
-
-        System.out.println("Digite o numero pais no qual voce deseja comprar: ");
-        pais = frete.nextInt();
-
-        switch (pais) {
-            case 1:
-                System.out.printf("O valor total eh %.2f de acordo com o frete dos Estados Unidos: " + (produto+freteA));
-                break;
-            case 2:
-                System.out.printf("O valor total eh %.2f de acordo com o frete da Franca: " + (produto+freteB));
-            break;
-
-            case 3:
-                System.out.printf("O valor total eh %.2f de acordo com o frete do Mexico: " + (produto+freteC));
-            break;
-
-            case 4:
-                System.out.printf("O valor total eh %.2f de acordo com o frete da Argentina: " + (produto+freteD));
-            break;
-
-            case 5:
-                System.out.printf("O valor total eh %.2f de acordo com o frete da China: " + (produto+freteE));
-            break;
-
-            default:
-                System.out.println("Nao existe numero para esse pais!");
-                break;
-        }
-        frete.close();
-    }
-}
- */
