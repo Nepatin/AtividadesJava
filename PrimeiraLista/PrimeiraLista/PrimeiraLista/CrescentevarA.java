@@ -39,7 +39,7 @@ public class CrescentevarA {
         {
             System.out.printf("\n%d, %d, %d\n", c, a, b);
         }
-        else if ((c <= b && b < a))
+        else if ((c <= b && b <= a))
         {
             System.out.printf("\n%d, %d, %d\n", c, b, a);
         }
