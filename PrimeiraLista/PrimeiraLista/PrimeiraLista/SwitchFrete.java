@@ -6,7 +6,7 @@ public class SwitchFrete {
     public static void main(String[] args) {
         float produto;
 
-        double  totala, totalb, totalc, totald, totale;
+        double totala, totalb, totalc, totald, totale;
 
         int pais;
 
