@@ -1,6 +1,5 @@
 package PrimeiraLista;
 
-
 import java.util.Scanner;
 
 public class SwitchFrete {
