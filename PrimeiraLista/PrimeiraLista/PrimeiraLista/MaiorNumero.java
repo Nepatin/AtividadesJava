@@ -24,11 +24,11 @@ public class MaiorNumero {
         } else {
             rec= b;
         }
-  	if(rec > cn) {
-    	   	System.out.printf("O numero maior e: %d\n", rec);
-        } else {
-           	System.out.printf("O numero maior e: %d\n", cn);
-        }
+  		if(rec > cn) {
+    	   		System.out.printf("O numero maior e: %d\n", rec);
+        	} else {
+           		System.out.printf("O numero maior e: %d\n", cn);
+        	}
 
         System.out.println("Fim do programa.");
 
