@@ -21,23 +21,15 @@ public class MaiorNumero {
         cn = num.nextInt();
 
         if (a > b) {
-
             rec= a;
-
         } else {
-
             rec= b;
-
         }
 
         if(rec > cn) {
-
     	   System.out.printf("O numero maior e: %d\n", rec);
-
         } else {
-
            System.out.printf("O numero maior e: %d\n", cn);
-
         }
 
         System.out.println("Fim do programa.");
@@ -49,9 +41,9 @@ public class MaiorNumero {
 /*
 Outra maneira de receber o numero maior:
 
-if (a > b && a > cn) 	//o numero 1 maior que o 2 e 3 ,senão o numero maior é 2 ou 3
+if (a > b && a > cn) 	//o numero 1 maior que o 2 e 3 ,senÃ£o o numero maior Ã© 2 ou 3
 	rec = a;			                       //depois compara o numero 2 e 3 pra saber qual o maior
-else if (b > cn)			               //o maior valor é gravado rec
+else if (b > cn)			               //o maior valor Ã© gravado rec
 	rec = b;
 else 
 	rec = cn;
@@ -63,6 +55,6 @@ rec = cn;
     	   rec = a;
        if (b > rec)
     	   rec = b;
-       System.out.printf("O número maior é: %d", rec);
+       System.out.printf("O nÃºmero maior Ã©: %d", rec);
 
 */
