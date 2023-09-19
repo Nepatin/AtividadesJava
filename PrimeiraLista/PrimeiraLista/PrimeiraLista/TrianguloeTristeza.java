@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class TrianguloeTristeza {
     public static void main(String[] args) {
-        int n1, n2, n3;
+        int n1, n2, n3, soma;
 
         Scanner num = new Scanner (System.in);
 
@@ -19,7 +19,11 @@ public class TrianguloeTristeza {
         System.out.println("Digite o terceiro numero:");
         n3 = num.nextInt();
 
-        if (n1 == n2 && n2 == n3)
+        soma = n1+n2+n3;
+
+        if (soma > 180){
+            System.out.println("Nao Ã© um triangulo");
+        }else if (n1 == n2 && n2 == n3)
         {
             System.out.printf("Dado os numeros %d, %d e %d o seu triangulo eh equilatero.", n1, n2, n3);
         }else if (n1 < n2 && n2 == n3)
@@ -37,17 +41,17 @@ public class TrianguloeTristeza {
         }
         else if (n1 > n2 && n2 > n3)
         {
-            System.out.printf("Dado os números %d, %d e %d o seu triangulo eh escaleno.", n1, n2, n3);
+            System.out.printf("Dado os nÃºmeros %d, %d e %d o seu triangulo eh escaleno.", n1, n2, n3);
         }
         else if (n1 > n2 && n2 < n3)
         {
-            System.out.printf("Dado os números %d, %d e %d o seu triangulo eh escaleno.", n1, n2, n3);
+            System.out.printf("Dado os nÃºmeros %d, %d e %d o seu triangulo eh escaleno.", n1, n2, n3);
         }else if (n1 < n2 && n2 > n3)
         {
-            System.out.printf("Dado os números %d, %d e %d o seu triangulo eh escaleno.", n1, n2, n3);
+            System.out.printf("Dado os nÃºmeros %d, %d e %d o seu triangulo eh escaleno.", n1, n2, n3);
         }else if (n1 < n2 && n2 < n3)
         {
-            System.out.printf("Dado os números %d, %d e %d o seu triangulo eh escaleno.", n1, n2, n3);
+            System.out.printf("Dado os nÃºmeros %d, %d e %d o seu triangulo eh escaleno.", n1, n2, n3);
         }
         num.close();
     }
