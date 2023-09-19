@@ -21,7 +21,8 @@ public class TrianguloeTristeza {
 
         soma = n1+n2+n3;
 
-        if (soma > 180){
+        if (soma > 180)
+        {
             System.out.println("Nao é um triangulo");
         }else if (n1 == n2 && n2 == n3)
         {
@@ -38,12 +39,10 @@ public class TrianguloeTristeza {
         }else if (n1 == n2 && n2 > n3)
         {
             System.out.printf("Dado os numeros %d, %d e %d o seu triangulo eh isosceles.", n1, n2, n3);
-        }
-        else if (n1 > n2 && n2 > n3)
+        }else if (n1 > n2 && n2 > n3)
         {
             System.out.printf("Dado os números %d, %d e %d o seu triangulo eh escaleno.", n1, n2, n3);
-        }
-        else if (n1 > n2 && n2 < n3)
+        }else if (n1 > n2 && n2 < n3)
         {
             System.out.printf("Dado os números %d, %d e %d o seu triangulo eh escaleno.", n1, n2, n3);
         }else if (n1 < n2 && n2 > n3)
